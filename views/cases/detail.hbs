@@ -1,0 +1,13 @@
+{{> menu }}
+
+<form method="GET" action="/cases">
+  <input type="text" name="search" value="{{searchQuery}}" placeholder="Zoek cases">
+  <button type="submit">Zoek</button>
+</form>
+
+<h1>{{case.title}}</h1>
+<p>{{case.date}}</p>
+<img src="{{case.imageUrl}}" alt="{{case.title}}" width="400" />
+<div>{{{case.description}}}</div>
+
+{{> footer }}

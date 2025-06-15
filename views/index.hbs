@@ -1,0 +1,40 @@
+<!-- hero section start  -->
+<!-- Main content -->
+<section class="slice py-5">
+    <div class="container">
+        <div class="row row-grid align-items-center">
+            <div class="col-12 col-md-5 col-lg-6 order-md-2">
+                <!-- Image -->
+                <figure class="w-100">
+                    <img alt="Image placeholder" src="/images/illustration-1.svg" class="img-fluid mw-md-120">
+                </figure>
+            </div>
+            <div class="col-12 col-md-7 col-lg-6 order-md-1 pr-md-5">
+                <!-- Heading -->
+                <h1 class="display-4 text-center text-md-left mb-3">
+                    Development zoals het <strong class="text-primary">hoort</strong>
+                </h1>
+                <!-- Text -->
+                <p class="lead text-center text-md-left text-muted">
+                    Bij ons kun je rekenen op stiptheid en een nauwgezette aanpak. We leveren op tijd, volgens plan en met een compromisloze focus op kwaliteit.
+                </p>
+                <!-- Buttons -->
+                <div class="text-center text-md-left mt-5">
+                    <a href="/contact" class="btn btn-primary btn-icon">
+                        <span class="btn-inner--text">Contacteer ons</span><span class="btn-inner--icon">
+                            <i data-feather="arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="slice pt-0">
+  <div class="container">
+    {{#each sections}}
+      {{> info-section this}}
+    {{/each}}
+  </div>
+</section>

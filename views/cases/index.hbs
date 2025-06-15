@@ -1,0 +1,19 @@
+{{> menu }}
+<h1>Cases</h1>
+
+<form method="GET" action="/cases">
+  <input type="text" name="tag" value="{{searchTag}}" placeholder="Filter op tag">
+  <button type="submit">Zoek</button>
+</form>
+
+<ul>
+  {{#each cases}}
+    <li>
+      <a href="/cases/{{this.slug}}">{{this.title}}</a>
+      <p>{{this.shortDescription}}</p>
+      <p><strong>Tag:</strong> {{this.tag}}</p>
+    </li>
+  {{/each}}
+</ul>
+
+{{> footer }}

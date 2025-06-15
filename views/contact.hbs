@@ -1,0 +1,73 @@
+<!-- Main content -->
+<section class="slice py-6 pt-lg-7 pb-lg-8 bg-gradient-primary">
+    <!-- Container -->
+    <div class="container d-flex align-items-center text-center text-lg-left">
+        <div class="col px-0">
+            <div class="row row-grid align-items-center">
+                <div class="col-lg-6">
+                    <!-- Heading -->
+                    <h1 class="h1 text-white text-center text-lg-left my-4">
+                        Heb je een project <strong>in gedachten?</strong>
+                    </h1>
+                    <!-- Text -->
+                    <p class="lead text-white text-center text-lg-left opacity-8">
+                       Bij ons kun je rekenen op stiptheid en een nauwgezette aanpak. We leveren op tijd, volgens plan en met een compromisloze focus op kwaliteit.
+                    </p>
+                    <!-- Buttons -->
+                    <div class="mt-5 text-center text-lg-left">
+                        <a href="#sct-form-contact" data-scroll-to class="btn btn-white btn-lg btn-icon">
+                            <span class="btn-inner--icon">
+                                <i data-feather="edit-2"></i>
+                            </span>
+                            <span class="btn-inner--text">Verstuur een bericht</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SVG separator -->
+    <div class="shape-container shape-line shape-position-bottom">
+        <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100"
+            style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+            <polygon points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+    </div>
+</section>
+<section class="slice slice-lg" id="sct-form-contact">
+    <div class="container position-relative zindex-100">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <h3>Contacteer ons</h3>
+                <p class="lh-190">Als er iets is waar we je mee kunnen helpen, laat het ons weten. We zullen meer dan blij zijn om je te kunnen bijstaan.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <!-- Form -->
+                <form action="/contact" method="get" id="form-contact">
+                    <div class="form-group">
+                        <input name="name"  class="form-control form-control-lg" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input name="email" class="form-control form-control-lg" type="email" placeholder="email@example.com"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <input name="text" class="form-control form-control-lg" type="text" placeholder="+40-745-234-567" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control form-control-lg" data-toggle="autosize"
+                            placeholder="Tell us a few words ..." rows="3" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <!-- <div class="g-recaptcha" data-sitekey="6Lfs5ScUAAAAANAJwGrdfvWLFRRiVbKRE2vfoaFj"></div> -->
+                        <button type="reset" class="btn-reset d-none"></button>
+                        <button type="submit" class="btn btn-block btn-lg btn-primary mt-4">Send your message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
