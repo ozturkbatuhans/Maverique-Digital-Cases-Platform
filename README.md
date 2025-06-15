@@ -38,6 +38,7 @@ An interactive web application that showcases various digital service cases — 
 
 ##  Project Structure
 
+```bash
 .
 ├── app.js                  # Express app configuration
 ├── routes/                 # Route definitions (home, cases, contact)
